@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register Form</title>
+    <link rel="stylesheet" href="Register.css" />
+  </head>
+  <body>
+    <h1>REGİSTER PAGE</h1>
+    <!-- Novalidate ile validayson engellenebilir.Novalidate özelliği boolean türünde bir özelliktir. Novalidate özelliği tanımlandığında, form verilerinin doğrulanması gerektiğini belirtir -->
+
+    <form action="">
+      <div>
+        <label for="firstname">First Name </label>
+        <input
+          class="inputs"
+          type="text"
+          id="Fisrtname"
+          name="Firstname"
+          placeholder="Enter your first name"
+          required
+        />
+      </div>
+
+      <div>
+        <label for="lasttname">Last Name </label>
+        <input
+          class="inputs"
+          type="text"
+          id="lastrtname"
+          name="lastname"
+          placeholder="Enter your last name"
+        />
+      </div>
+
+      <div>
+        <label for="email">Email </label>
+        <input
+          class="inputs"
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter your email"
+          required
+        />
+      </div>
+
+      <div>
+        <label for="password">Password </label>
+        <input
+          class="inputs"
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Enter your password"
+          required
+        />
+      </div>
+
+      <div>
+        <label for="birthday">Day Of Bird </label>
+        <input
+          class="inputs"
+          type="date"
+          id="birthday"
+          name="birthday"
+          value="2022-01-01"
+          placeholder="Enter your birthday"
+          required
+        />
+      </div>
+
+      <div>
+        <label for="phone-number">Phone Number</label>
+        <input
+          class="inputs"
+          type="tel"
+          id="phone-number"
+          name="phone-number"
+          placeholder="Enter your phone number"
+        />
+      </div>
+
+      <div class="textarea-div">
+        <label for="adres">Adress </label>
+        <textarea
+          class="inputs"
+          id="Adress"
+          name="adres"
+          placeholder="Enter your adress"
+          cols="30"
+          rows="5"
+        >
+        </textarea>
+      </div>
+
+      <div>
+        <label for="country">Country </label>
+        <select class="inputs" id="country" name="country">
+          <option value="Türkiye">Türkiye</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="gender">Gender </label>
+        <div class="gender-div">
+          <input class="radio-check" type="radio" id="male" name="gender" />
+          <label for="male">Male</label>
+          <input
+            class="radio-check"
+            type="radio"
+            id="female"
+            name="gender"
+            chaecked
+          />
+          <label for="female">Female</label>
+        </div>
+      </div>
+
+      <div>
+        <label for="Languages">Languages</label>
+        <div class="lang-div">
+          <input
+            class="radio-check"
+            type="checkbox"
+            id="english"
+            name="english"
+          />
+          <label for="english">English</label>
+
+          <input
+            class="radio-check"
+            type="checkbox"
+            id="francais"
+            name="francais"
+          />
+          <label for="francais">Francais</label>
+
+          <input
+            class="radio-check"
+            type="checkbox"
+            id="turkish"
+            name="turkish"
+          />
+          <label for="turkish">Turkish</label>
+          <!--label ve inputu bağlamak icin for-id aynu olmalı  -->
+        </div>
+      </div>
+
+      <div class="btn-container">
+        <input type="submit" value="Save" />
+        <input type="reset" value="clear" />
+      </div>
+    </form>
+  </body>
+</html>

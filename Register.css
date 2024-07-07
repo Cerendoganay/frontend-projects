@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Wittgenstein", serif;
+  background-image: url("https://cdn.pixabay.com/photo/2020/01/15/20/37/sea-4768869_1280.jpg");
+  background-size: cover;
+}
+
+form {
+  background: linear-gradient(rgb(204, 174, 238) 0%, rgb(233, 189, 148) 100%);
+  /* background-color: linear-gradient(rgb(101, 150, 255), rgb(228, 91, 255)); */
+  width: fit-content;
+  margin: 20px auto;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+h1 {
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* label inline elementtir. Dolayısıyla width propertisi doğrudan çalışmaz */
+label {
+  display: inline-block;
+  width: 100px;
+}
+
+.gender-div,
+.lang-div {
+  display: inline-block; /* inline gibi yan yana diziyor */
+}
+
+.lang-div label,
+.gender-div label {
+  width: auto;
+  margin-right: 10px;
+}
+
+.inputs {
+  border-radius: 5px;
+  width: 300px;
+  padding: 10px;
+  margin: 20px;
+}
+
+.radio-check {
+  margin-bottom: 20px;
+}
+
+.btn-container {
+  text-align: center;
+}
+
+.btn-container input {
+  width: 100px;
+  border-radius: 10px;
+  border: none;
+  background-color: hsl(286, 76%, 72%);
+  padding: 10px;
+}
+
+.btn-container input:hover {
+  background-color: hsl(299, 100%, 40%);
+  color: aliceblue;
+  font-weight: 700;
+  cursor: pointer;
+  /* 2.48 */
+}
+.textarea-div * {
+  vertical-align: middle;
+}
