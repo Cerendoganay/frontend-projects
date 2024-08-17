@@ -11,7 +11,7 @@ body {
 }
 
 form {
-  background: linear-gradient(rgb(204, 174, 238) 0%, rgb(233, 189, 148) 100%);
+  background: linear-gradient(rgb(135, 215, 235) 0%, rgb(233, 189, 148) 100%);
   /* background-color: linear-gradient(rgb(101, 150, 255), rgb(228, 91, 255)); */
   width: fit-content;
   margin: 20px auto;
